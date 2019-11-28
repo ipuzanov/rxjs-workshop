@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>combineLatest example</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <label for="name"> Search: <input id="name" type="text" name="name" /> </label>
+        <label for="category">
+          Category:
+          <select id="category" name="category">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+            <option value="I">I</option>
+            <option value="J">J</option>
+          </select>
+        </label>
+        <label for="in-stock">
+          In stock? <input id="in-stock" type="checkbox" name="in-stock" />
+        </label>
+      </div>
+      <ul id="out"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+    <script src="util.js"></script>
+    <script src="uirx/index.js"></script>
+  </body>
+</html>
